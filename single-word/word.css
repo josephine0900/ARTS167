@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Custom';
+    src: url(../assets/fonts/LuckiestGuy/LuckiestGuy-Regular.ttf);
+}
+
+/* font isn't working, and weird margin around text */
+
+* {
+    box-sizing:border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 8vw;
+    font-family:'Custom', 'Verdana', 'Helvetica';
+    background: black;
+    color:whitesmoke;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.glow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+}
+
+h1:hover {
+    animation-name: rainbow;
+    animation-duration: 1.20s;
+    animation-iteration-count: infinite;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ffffff, 0 0 50px #ffffff, 0 0 60px #fcffff, 0 0 80px #ffffff;
+}
+
+@keyframes rainbow {
+    0% {color: red;}
+    20% {color: orange;}
+    40% {color:rgb(255, 255, 86);}
+    60% {color: green;}
+    80% {color: blue;}
+    100% {color: purple;}
+}
+
+/* lightbulb!
+
+h1:hover {
+    animation: glow 2s ease-in-out infinite alternate;
+    color: rgb(237, 237, 211);
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff93f, 0 0 40px #fff93f, 0 0 50px #fff93f, 0 0 60px #fff93f, 0 0 70px #fff93f;
+    }
+  
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fffb88, 0 0 40px #fffb88, 0 0 50px #fcf872, 0 0 60px #fffb88, 0 0 70px #fffb88, 0 0 80px #fffb88;
+    }
+} */
